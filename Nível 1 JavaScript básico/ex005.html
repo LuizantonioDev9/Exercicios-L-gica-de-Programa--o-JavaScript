@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Trabalhando com números</h1>
+    <input type="button" value="Clique para calcular" onclick="clicou()">
+    <section id="resultado">
+        <p>O resultado vem aqui...</p>
+    </section>
+    <script>
+        alert('Seja bem vindo(a) ao meu site!');
+
+        function clicou() {
+            let num = Number(prompt('Digite um número:'));
+            let res = document.getElementById('resultado');
+            let multi = num * 2;
+            let div = num/2;
+            res.innerHTML = `<p>O dobro de ${num} é ${multi} e a metade é ${div} </p>`
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Trabalhando com Dados v2.0</h1>
+    <input type="button" value="Clique para começar" onclick="clicou()">
+    <section>
+        <p id="texto">Aqui vai aparecer o resultado...</p>
+    </section>
+    <script>
+        function clicou() {
+            let name = prompt('Qual o seu nome?');
+            let texto = document.getElementById('texto');
+            texto.innerHTML = `<p>Olá, <strong>${name}</strong>! É um grande prazer te conhecer!</p>`
+        }
+    </script>
+</body>
+</html>
