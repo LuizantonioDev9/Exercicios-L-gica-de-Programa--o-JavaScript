@@ -15,7 +15,6 @@ function calcular() {
     if(totalBtu <= 15000 && totalBtu >= 12000) {
         totalBtu = 12000;
         saida.innerHTML += `<p>${totalBtu} BTU</p>`;
-        console.log(totalBtu);
     } else {
         saida.innerHTML += `<p>${totalBtu} BTU</p>`
     }
